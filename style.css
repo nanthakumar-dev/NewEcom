@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(230, 223, 223);
+}
+img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+    padding: 0 13px;
+    background: #1F74BA;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 3px 5px rgb(156, 152, 152);
+    position: relative;
+    color: white;
+}
+.head h1{
+    color: white;
+    letter-spacing: .4px;
+}
+.head span{
+    font-size: 20px;
+}
+.search{
+    flex: 1;
+    margin: 0 15px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding:0 10px;
+}
+.search:active{
+    border: 1.5px solid rgb(16, 118, 212);
+}
+.search i{
+    font-size: 19px;
+    color: rgb(16, 118, 212);
+}
+.search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+ul {
+    display: flex;
+}
+li{
+    list-style: none;
+    padding: 0 8px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bar i{
+    font-size: 22px;
+    padding-right: 20px;
+    display: none;
+}
+.swiper{
+    width: 100%;
+    background: rgb(194, 24, 24);
+    height: 90vh;
+    
+}
+.mySwiper{
+    background: red;
+}
+.session-header{
+    color: #1F74BA;
+    text-align: center;
+    margin: 15px 0px;
+}
+.session-container{
+    width: 85%;
+    background: rgb(165, 153, 153);
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.session-container div{
+    margin: 5px 0;
+    height: 100px;
+    background: orange;
+}
+.session-container div:hover{
+    scale: 1.07;
+    transition: .4s all ease-in-out;
+    opacity: 0.7;
+
+}
+.product-container{
+    width: 85%;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.product{
+    height: 280px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.product .heart{
+    position: absolute;
+    color: red;
+    font-size: 18px;
+}
+.product-img{
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.product-img img{
+    object-fit: contain;
+}
+.product-container p{
+    font-size: 17px;
+}
+.p-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.buttons button{
+    padding: 5px 10px;
+}
+@media screen and (max-width:786px) {
+    nav{
+        justify-content: space-between;
+        padding: 0;
+        
+    }
+    .head h2{
+        padding-left: 13px;
+    }
+    .bar i{
+        display: flex;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        top:100%;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        width: 100%;
+        display: none;     
+    }
+    ul.active{
+        display: flex;
+    }
+    .banner{
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+    .product-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:400px){
+    .product-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 auto;
+    }
+    .session-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .search{
+        display: none;
+    }
+}
+footer{
+    height: 200px;
+    width: 100%;
+    background: black;
+    margin-top: 15px;
+}
+.swiper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide {
+    font-size: 24px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
