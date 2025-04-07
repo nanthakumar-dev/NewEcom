@@ -195,6 +195,9 @@ a{
     .product-container{
         grid-template-columns: repeat(3,1fr);
     }
+    a{
+        color:#1F74BA 
+    }
 }
 @media screen and (max-width:400px){
     .product-container{
@@ -206,6 +209,9 @@ a{
     }
     .search{
         display: none;
+    }
+    a{
+        color:#1F74BA;
     }
 }
 footer{
